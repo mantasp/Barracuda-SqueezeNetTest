@@ -46,8 +46,7 @@ public class RunTest : MonoBehaviour
 		modelBuilder.Output(output_name);
 		
 		engine = WorkerFactory.CreateWorker(model, useGPU ? WorkerFactory.Device.GPU : WorkerFactory.Device.CPU);
-
-		displayImage.texture = PrepareTextureForInput(inputImage, !useGPU);
+		
 		var input = new Tensor(PrepareTextureForInput(inputImage, !useGPU), 3);
 		
 		inputs["data"] = input;
@@ -61,7 +60,7 @@ public class RunTest : MonoBehaviour
 	{
 		// Skip frame before starting
 		yield return null;
-		//displayImage.texture = inputImage;
+		displayImage.texture = inputImage;
 
 		while (repeatExecution-- > 0)
 		{
