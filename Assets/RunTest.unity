@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b71824c35cd8447bc91387240e4d797e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  epsilon: 0.001
+  epsilon: 0.01
   srcModel: {fileID: 11400000, guid: f57cc1e733db44c7d9e28fbf36bc5207, type: 3}
   inputImage: {fileID: 2800000, guid: cdf17956f956543b888c1246e686f5c7, type: 3}
   labelsAsset: {fileID: 4900000, guid: 312cd905356364c92a18b1f53563ebd0, type: 3}
